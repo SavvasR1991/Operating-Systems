@@ -1,0 +1,20 @@
+URL Generator v1.00
+Copyright (C) 2004 Spadix Software. http://www.spadixbd.com
+
+
+Based on a concept design by Plexus Digital Solutions
+http://www.digital-solutions.co.uk
+
+
+This documentation by Jason Sheldon, Plexus Digital Solutions.
+---------------------------------------------------------------
+
+Welcome to URL Generator for Windows 9x/2k/NT/Me/XP
+
+URL Generator is an utility designed specifically to assist Rafabot users who need to download a large sequence of files from a server that does not reveal file listings, but where you know the file naming conventions used on the that server.
+
+In particular, it is designed for 'directly downloadable files', where you do not want to download whole websites, or HTML files, but perhaps a range of sequential images from an online image library. Perhaps you subscribe to an image library where you have to add files to a basket, but the basket does not have a "bulk" or "download all" option - you have to  download each file individually! That could take days when you have a large library!
+
+URL Generator will create a list of URL's based on the field values you enter. The list of URL's can then be saved from the program, and loaded into RAFABOT (General tab / Source: URLs from File). RAFABOT will then download each and every file automatically, and saves you having to manually type in each file you want to download.
+
+Please see below the version information for tips on how to use this program effectively.

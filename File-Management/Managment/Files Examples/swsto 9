@@ -1,0 +1,528 @@
+	
+
+    Home Security 
+
+The 17 Most Dangerous Places on the Web
+By Nick Mediati, PCWorld
+
+    Sep 26, 2010 9:00 PM
+    e-mail
+    print
+    Single
+    Page
+
+Illustration by Mark Todd
+Those photos of Jessica Alba may be murder on your PC. That Google search result that looks as if it answers all your questions may do nothing but create a serious tech headache. The fun you had watching that hilarious video you downloaded may not be worth the misery it can cause your system.
+
+You've been warned that the Internet is something of a security minefield--that it's easy to get in trouble. You can do everything you can think of to protect yourself and still be taken by a malware infection, a phishing scam, or an invasion of on­­line privacy. We'd like to provide a little help. Here are some of the hazards you may encounter, how dangerous they are, and what you can do to stay out of harm's way.
+
+Not all Web dangers are created equal. Thankfully, our friends at the Department of Homeland Security have made our work of classifying Web threats a little easier. Will you get taken just by visiting that unfamiliar site? Or will you have to look for trouble? Let our threat level indicator be your guide.
+
+Threat 1 >> Malicious Flash files that can infect your PC
+
+The Place: Websites that use Flash
+
+Adobe's Flash graphics software has become a big malware target in recent years, forcing the company to push out frequent security patches. But another danger you might not know about is associated with Flash cookies. Flash cookies are small bits of data that their creators can use to save Flash-related settings, among other things. But like regular cookies, Flash cookies can track the sites you visit, too. Worse still, when you delete your browser's cookies, Flash cookies get left behind.
+
+If You Have to Go There: To help protect against Flash-based attacks, make sure you keep your Flash browser plug-ins up-to-date. And you can configure the Flash plug-in to ask you before it downloads any Flash cookies.
+
+Threat 2 >> Shortened links that lead you to potentially harmful places
+
+The Place: Twitter
+
+Scammers love Twitter since it relies so much on URL shorteners, services that take long Internet addresses and re­­place them with something briefer.
+
+And it's very simple to hide malware or scams behind shortened URLs. A shortened link that supposedly points to the latest Internet trend-du-jour may be a Trojan horse in disguise.
+
+If You Have to Go There: Simply don't click links. Of course, that takes some of the fun out of Twitter. The other option is to use a Twitter client app. TweetDeck and Tweetie for Mac have preview features that let you see the full URL before you go to the site in question.
+
+Some link-shortening services, such as Bit.ly, attempt to filter out malicious links, but it seems to be a manual process, not an automatic one. TinyURL has a preview service you can turn on.
+
+Threat 3 >> E-mail scams or attachments that get you to install malware or give up personal info
+
+The Place: Your e-mail inbox
+
+Although phishing and infected e-mail attachments are nothing new, the lures that cybercrooks use are constantly evolving, and in some cases they're becoming more difficult to distinguish from legitimate messages. My junk mailbox has a phishing e-mail that looks like a legitimate order confirmation from Amazon. The only hint that something's amiss is the sender's e-mail address.
+
+If You Have to Go There: Don't trust anything in your inbox. Instead of clicking on links in a retailer's e-mail, go directly to the retailer's site.
+
+Threat 4 >> Malware hiding in video, music, or software downloads
+
+The Place: Torrent sites
+
+Torrent sites (such as BitTorrent) are often used for sharing pirated music, videos, or software, and are a trove of malware. No one vets the download files--they may be malware in disguise.
+
+Ben Edelman, privacy researcher and assistant professor at Harvard Business School, thinks torrent sites are the most dangerous places to visit, since they don't have a business model or reputation to defend (by comparison, many porn sites rely on being deemed trustworthy). "The [torrent] customers, they really don't want to pay," he says.
+
+If You Have to Go There: It's probably best to avoid torrent sites entirely, given their untrustworthy content, but if you must visit, use a secondary PC to protect your main system. Use antivirus software, and keep it up­­dated. Scan downloaded files and wait a couple of days be­­fore opening them. Brand-new malware can be tricky to catch, but the delay in opening may allow your antivirus software to get the necessary signatures.
+
+Threat 5 >> Malware in photos or videos of scantily clad women
+
+The Place: ‘Legitimate' porn sites
+
+Porn sites have a reputation of being less secure than mainstream sites, but that assumption doesn't tell the whole story. "There is no doubt that visiting Websites of ill-repute is deadly dangerous. If you make a habit of it, it's a given that you'll be attacked at some point," says Roger Thompson, chief research officer with security firm AVG. "Unfortunately, staying away from those sites won't keep you safe by itself, because innocent sites get hacked all the time, and are used as lures to draw victims to the attack servers."
+
+And as mentioned earlier, many porn sites operate as actual, legitimate businesses that want to attract and retain customers. That said, it may be hard to tell the "legit" porn sites from malware-hosting sites that use porn as a lure.
+
+If You Have to Go There: Be suspicious of video downloads, or sites that require you to install video codecs to view videos (see the next threat, below). Using tools like AVG's LinkScanner and McAfee's SiteAdvisor (or SiteAdvisor for Firefox) can help you weed out the malicious sites.
+
+And, again, consider visiting such sites on a secondary machine. You don't want your browser history on the family PC.
+
+Threat 6 >> Trojan horses disguised as video codecs, infecting your PC with malware
+
+The Place: Video download sites, peer-to-peer networks
+
+If you watch or download video online, you've likely been told to download a video codec--a small piece of software that provides support for a type of video file--at least once. Usually, these bits of software are perfectly legitimate (for example, the popular DivX codec), but some less-than-reputable download services or video sites may direct you to download a piece of malware disguised as a codec. Security software company Trend Micro provides a good example of what these attacks look like.
+
+If You Have to Go There: Your safest option is to stick with well-known video sites such as YouTube and Vimeo. And for catching up on the latest episodes of your favorite TV shows, sites and services like Hulu, TV.com, ABC.com, and iTunes are safer than peer-to-peer networks.
+
+Threat 7 >> Geolocation--your smartphone and perhaps other parties know where you are
+
+The Place: Your smartphone
+
+The smartphone market is still in its infancy, really, and so are the threats. One possible concern is the use--or abuse--of geolocation. Although plenty of legitimate uses for location data exist, the potential for inappropriate uses also exists. In one case, a game listed on the Android Market was in reality a client for a spy app. In a less invidious example, a site called pleaserobme.com showed that--for a time--a stream of FourSquare check-ins indicated that a person was away from their home (the site's goal, mind you, wasn't to condone theft, but to raise awareness of the issue).
+
+As in this example showing restaurants in a San Francisco neighborhood, some smartphone apps, such as Yelp for iPhone, use your physical location to provide you with information on nearby businesses or points of interest.
+Apple recently updated its privacy policy to reflect changes in how it handles location data in iOS 4. The policy now states that "to provide location-based services on Apple products, Apple and our partners and licensees may collect, use and share precise location data." You can read more on Apple's new privacy terms and what they mean for you.
+
+If You Have to Go There: Be particular about the location-based sites, apps, and services that you use. As shown in the screenshot at right services such as Yelp provide good examples of useful location-aware apps. On the other hand, weigh the privacy implications of services like FourSquare or the new Facebook Places feature, and consider how much you feel comfortable divulging. (Read more on how to retain privacy on FourSquare and Facebook Places.)
+Next Page: More Threats
+
+    12
+    inShare
+    2
+
+    Related:
+    Consumer advice
+
+    Internet
+
+The 17 Most Dangerous Places on the Web
+
+    1 2 3 4 
+
+Next Page
+by Taboola
+Promoted Links
+YOU MAY LIKE
+How To Improve Your PC’s Performance ?Avanquest-Download.com
+These 15 Photos Actually HappenedLOLWOT
+‘Warren Buffett Indicator’ Signals Collapse in Stock MarketNewsmax
+Illuminati Exposed: 15 Celebrities Rumored To Be Involved AllThingsCeleb.com
+Graphics card slugfest: AMD and Nvidia's most powerful gaming hardware compared
+Facebook Messenger coming to businesses, VR to fill news feeds in future
+Sponsored Links
+Norton Antivirus
+Save on Norton Antivirus. Official Partner. Norton Antivirus.
+Norton.CouponPal.com
+Cheap Electronics & more.
+Laptops, Smart TVs, Desktops, Tablets and much more. 40% discount.
+http://shop-4all.com
+ORIGIN PC Custom Built PC
+Started by former AW execs. Customize your desktop or laptop today.
+OriginPC.com
+Xidax - Custom Gaming PCs
+High-Performance Computers. Exclusive Lifetime Parts Warranty.
+www.xidax.com/desktops
+Comments
+Login
+
+50 Comments
+
+    SortSubscribeRSS
+
+59 days ago
+Thomas Rones
+This article is written as if someone has never used a computer before. I visit torrent sites everyday, never had anti-virus on my computer, and have never gotten a damaging virus... Lol even if you do get a virus its not that hard to TORRENT a copy of windows, throw it on a disc and restart the computer. Problem Solved.
+
+    LikeReplyShare
+
+0
+356 days ago
+Ivan Gramatikov
+My measures: 1) Patch, update or make your own patches 
+2) Use passwords with 60 chars of length or close to that number, when possible 3) "Security" Software don't matter! Only in rare cases for the most dumb threats 4)You haven't tried your luck at the lotto! How did you win?... 5) Use a VMware Linux machine inside another Linux machine. Be sure to surf both through VPNs enabled in both machines!... Be careful in you choice of VPN providers, avoid HideMyAss.
+
+    LikeReplyShare2 replies
+
+0
+356 days ago
+Ivan Gramatikov
+*Surf in the VMWare virtual machine, having beforehand configured both to run through VPN. Also, have your scripts disabled, your tracking scripts killed (ghostery app), your ads blocked (AdBlocker). In the case of possible infection, terminate your connection. Possibly reinstall your virtual machine.
+
+    LikeReplyShare1 reply
+
+0
+332 days ago
+Otto Ravenherz
+Using virtual machines isn't absolutely safe, as any sowtware built by human it has many vulnerable places, some malware detects vm and runs code on user's real machine using these bugs.
+
+    LikeReplyShare
+
+0
+631 days ago
+Dudinha
+Can you send me security tips?
+
+If yes, please send to dudinha@bocejo.com
+
+    LikeReplyShare
+
+0
+915 days ago
+benb1012
+
+Bearcomputerrepair said
+
+gsmiley said
+Get a Mac. Yes - I do agree to some extent. If you are a computer tech you will understand that Macs are susceptible to multiple hardware issues, and parts are extremely expensive. Although, Apple does not get viruses, but you have to pay a pretty penny for that feature. Linux.. See above
+
+Even tho apple computers are virus proof they also are hard to install things like softwares and things like that
+
+    LikeReplyShare
+
+0
+954 days ago
+KevinMeisenbacher
+ToddPerronne said
+DanSchmidt said
+TheTess said
+
+Torrent sites DO care about there reputation and a hell of a lot more than PORN sites you mentioned. Porn sites will trash your compouter WORSE than torrents sites. For that matter, Facebook needs to be RED tagged for the worse privacy problems, hackers, trash, and definately NOT safe!
+
+
+I beg to differ! I used a torrent to find out how to create a .torrent, and did a few test downloads and got hacked after 5 minutes. Torrent site, safe? Give me a break. Facebook needs to be red tagged definitely. Porn sites: Never got hacked, you just need to find really safe ones that DON'T REQUIRE DOWNLOADS.
+
+
+Blame yourself for your stupidity not the torrent site... Use some common sense and you won't get a virus.
+
+    LikeReplyShare
+
+0
+979 days ago
+JayJayBurkhalter
+AngelValenzuela said
+Stop using the BS OS called Windows (whatever)...
+Linux is the way to go!
+
+I've downloaded a lots of torrent files and I don't remember getting any virus...OH! I am running Ubuntu in my computer...OK!
+
+What about phishing, spamming, computer scams nobody is safe on the web not even mobile devices
+
+    LikeReplyShare
+
+0
+1057 days ago
+MicheleChambers
+DanSchmidt said
+TheTess said
+Torrent sites DO care about there reputation and a hell of a lot more than PORN sites you mentioned. Porn sites will trash your compouter WORSE than torrents sites. For that matter, Facebook needs to be RED tagged for the worse privacy problems, hackers, trash, and definately NOT safe!
+
+
+I beg to differ! I used a torrent to find out how to create a .torrent, and did a few test downloads and got hacked after 5 minutes. Torrent site, safe? Give me a break. Facebook needs to be red tagged definitely. Porn sites: Never got hacked, you just need to find really safe ones that DON'T REQUIRE DOWNLOADS.
+
+i got one virus on a torrent site, and it was actually a false positive from my antivirus software. "keygens" are not malicious.
+as for porn sites, I have never been to one, and i never will be to one, but i have heard that it is nothing but spyware and other crap.
+
+    LikeReplyShare
+
+0
+1122 days ago
+ToddPerronne
+DanSchmidt said
+TheTess said
+Torrent sites DO care about there reputation and a hell of a lot more than PORN sites you mentioned. Porn sites will trash your compouter WORSE than torrents sites. For that matter, Facebook needs to be RED tagged for the worse privacy problems, hackers, trash, and definately NOT safe!
+
+
+I beg to differ! I used a torrent to find out how to create a .torrent, and did a few test downloads and got hacked after 5 minutes. Torrent site, safe? Give me a break. Facebook needs to be red tagged definitely. Porn sites: Never got hacked, you just need to find really safe ones that DON'T REQUIRE DOWNLOADS.
+
+
+Blame yourself for your stupidity not the torrent site... Use some common sense and you won't get a virus.
+
+    LikeReplyShare
+
+0
+1167 days ago
+NativelySpeakingEsl
+You both have a point
+
+    LikeReplyShare
+
+0
+1170 days ago
+DanSchmidt
+TheTess said
+Torrent sites DO care about there reputation and a hell of a lot more than PORN sites you mentioned. Porn sites will trash your compouter WORSE than torrents sites. For that matter, Facebook needs to be RED tagged for the worse privacy problems, hackers, trash, and definately NOT safe!
+
+
+I beg to differ! I used a torrent to find out how to create a .torrent, and did a few test downloads and got hacked after 5 minutes. Torrent site, safe? Give me a break. Facebook needs to be red tagged definitely. Porn sites: Never got hacked, you just need to find really safe ones that DON'T REQUIRE DOWNLOADS.
+
+    LikeReplyShare
+
+0
+1361 days ago
+cruelcore1
+Nice to see you're willing to help people protect themselves on the net. However, in some points you're being too paranoid. For example, content you download using torrent sites is very rarely dangerous if those files arent executable. And even then you have to execute them first. If you're smart enough you'll check out the comments before downloading an executable file. Orange it should be. Porn sites are not much less dangerous.
+However, you need to pay attention when a file appears as non-executable or otherwise you could start an exe file thinking it was MP3. That is a problem for laymen.
+
+Though, the video codec stuff should be marked with orange because it's hard to figure out whether it's true or fake.
+
+    LikeReplyShare
+
+0
+1385 days ago
+waldojim
+RickDobbelmannqbtt said
+Linux.. See above
+
+All I saw was a troll... Did I miss something?
+http://gamerocket.­net/images/WDQ50_Mou­ntain_Troll.jpg
+
+    LikeReplyShare
+
+0
+1386 days ago
+RickDobbelmannqbtt
+Bearcomputerrepair said
+gsmiley said
+Get a Mac.
+
+
+Yes -
+I do agree to some extent. If you are a computer tech you will understand that Macs are susceptible to multiple hardware issues, and parts are extremely expensive.
+
+Although, Apple does not get viruses, but you have to pay a pretty penny for that feature.
+
+
+Linux.. See above
+
+    LikeReplyShare
+
+0
+1386 days ago
+RickDobbelmannqbtt
+gsmiley said
+Get a Mac.
+
+
+Why bother..
+
+Linux is cheaper, safer and easier to run.
+
+No need to buy another computer. Just install Linux. Todays linux is super easy, hardware friendly and one of the most secure OS available!!
+
+No need to run bloated anti virus software.
+
+No need to spend $1500 on a computer.
+
+http://www.ubuntu.­com/
+
+http://www.linuxmi­nt.com/
+
+http://puppylinux.­org
+
+http://www.opensus­e.org/en/
+
+http://fedoraproje­ct.org/
+
+http://www.linux.c­om/
+
+BrannonCenteno said
+Best way to stay protected: Don't use a computer.
+
+Find a good typewriter, a nice pad of paper, a pocket planner, and a comfortable pen and you're all set.
+
+
+Nahh all you need is Linux.. See above
+
+    LikeReplyShare
+
+0
+1386 days ago
+DarkLider1fwf
+for morons even opening the pc is a risky place.
+and speaking frankly even your webpage is risky since just by opening it you can get infected/ 99% of adds are unsafe
+
+if you really want to protect your self use a soft that makes you navigate through a proxy and hide your ip
+
+    LikeReplyShare
+
+0
+1555 days ago
+JosephRusso
+This PCWorld of the most 17 Places of
+Danger is so important, Don't let this get by you. Read THIS, VERY IMPORTANT !
+
+    LikeReplyShare
+
+0
+1591 days ago
+DTNick
+spiritflare said
+very poorly risk categorized - smartphones are the big security risk for storage of credentials, data at rest, and in transit (i.e. encrypted SMS etc).
+
+
+Right, though the point of the story was online dangers, not general security issues.
+
+(I'm a couple months late to respond, I know. )
+
+    LikeReplyShare
+
+0
+1609 days ago
+waldojim
+BrannonCenteno said
+Best way to stay protected: Don't use a computer.
+
+Find a good typewriter, a nice pad of paper, a pocket planner, and a comfortable pen and you're all set.
+
+
+don't forget your slide-rule!
+
+    LikeReplyShare
+
+0
+1609 days ago
+BrannonCenteno
+Best way to stay protected: Don't use a computer.
+
+Find a good typewriter, a nice pad of paper, a pocket planner, and a comfortable pen and you're all set.
+
+    LikeReplyShare
+
+0
+1624 days ago
+Bearcomputerrepair
+rythemboy said
+Its a challenge to surf the net, given that even technology giants such as twitter get hacked. Just pray, hope for the best, and surf away.
+
+My computer is so freaking slow for running so much security software that I wonder how fun it is anymore. Got to thank microsoft for making windows so bulletproof *rolls eyes*
+
+
+Increase your Memory or RAM (Random Access Memory)
+
+    LikeReplyShare
+
+0
+1624 days ago
+Bearcomputerrepair
+RynardMoore said
+Pred said
+AlanKunz said
+making a timeline to infection where you purposely go do stupid things to infect yourself doesn't really prove anything.
+
+I have been running my gaming PC at home with no AV software for years on XP SP2, Vista, and 7 and have not been infected once... and I go to torrent sites all the time!
+
+tips: keep the firewall on... do not download known adware/spyware trash like free smileys... do not use adobe reader to open suspicious PDFs (foxit reader is faster anyway)... do not use IE... try Chrome... if you have a program file you are not certain about... use a web based scanner to check it out... there are several that will check your entire PC but Kaspersky has one that you can upload a single suspicious file to and find out if it is safe. It's not that hard to keep a PC clean without AV on it... educate yourself so you aren't being stupid!
+
+
+Definitely don't take this person's advice. There are many other ways to get infected than just downloading, and any browser can be vulnerable. Also, this person obviously can't be sure that he/she has never been infected if there's not an antivirus to prove that, and the web based scanners are nowhere near as effective as an installed one. I think this person should heed his/her own advice with the "educate yourself so you aren't being stupid" comment.
+
+
+Agreed -- no AV software on a Windows machine is a dumb idea. I found out the hard way -- back in the days of dial-up Internet. Plain and simple -- if you are running any system connected to the Internet -- make sure you are fully protected. This is particularly if you run Windows.
+
+
+In my opinion, you don't need any real security if you are computer savvy, but try to teach that method to millions of people who aren't. Of course AVG is needed. If you aren't running any computer anti-virus you are going to have more issues than you can imagine. I only agree if you know absolutely what you are doing...
+
+    LikeReplyShare
+
+0
+1625 days ago
+Bearcomputerrepair
+gsmiley said
+Get a Mac.
+
+
+Yes -
+I do agree to some extent. If you are a computer tech you will understand that Macs are susceptible to multiple hardware issues, and parts are extremely expensive.
+
+Although, Apple does not get viruses, but you have to pay a pretty penny for that feature.
+
+    LikeReplyShare
+
+0
+1625 days ago
+Bearcomputerrepair
+I think that this is very valuable information when considering optimization techniques and phone technical support.
+
+    LikeReplyShare
+
+0
+1625 days ago
+Bearcomputerrepair
+TheTess said
+Torrent sites DO care about there reputation and a hell of a lot more than PORN sites you mentioned. Porn sites will trash your compouter WORSE than torrents sites. For that matter, Facebook needs to be RED tagged for the worse privacy problems, hackers, trash, and definately NOT safe!
+
+
+Elucidate...
+
+    LikeReplyShare
+
+0
+1630 days ago
+RynardMoore
+Pred said
+AlanKunz said
+making a timeline to infection where you purposely go do stupid things to infect yourself doesn't really prove anything.
+
+I have been running my gaming PC at home with no AV software for years on XP SP2, Vista, and 7 and have not been infected once... and I go to torrent sites all the time!
+
+tips: keep the firewall on... do not download known adware/spyware trash like free smileys... do not use adobe reader to open suspicious PDFs (foxit reader is faster anyway)... do not use IE... try Chrome... if you have a program file you are not certain about... use a web based scanner to check it out... there are several that will check your entire PC but Kaspersky has one that you can upload a single suspicious file to and find out if it is safe. It's not that hard to keep a PC clean without AV on it... educate yourself so you aren't being stupid!
+
+
+Definitely don't take this person's advice. There are many other ways to get infected than just downloading, and any browser can be vulnerable. Also, this person obviously can't be sure that he/she has never been infected if there's not an antivirus to prove that, and the web based scanners are nowhere near as effective as an installed one. I think this person should heed his/her own advice with the "educate yourself so you aren't being stupid" comment.
+
+
+Agreed -- no AV software on a Windows machine is a dumb idea. I found out the hard way -- back in the days of dial-up Internet. Plain and simple -- if you are running any system connected to the Internet -- make sure you are fully protected. This is particularly if you run Windows.
+
+    LikeReplyShare
+
+0
+Show more comments
+How-To Videos
+
+TechTip: Using 'track changes' to avoid proofreading confusion
+
+View more PCWorld videos »
+Greenbot Top Android stories
+from our new site, Greenbot
+img 1333 edit http://facebook.com
+video
+Galaxy S6 review: Samsung's glorious return to greatness
+gs6 benchmarkhead
+Benchmarked: The Galaxy S6 is the fastest Android phone....
+android device protection top
+Everything you need to know about Device Protection in...
+bestgames lead
+The 15 best Android games to play right now
+Popular Resources
+
+    Video/Webcast
+    Sponsored
+    Taking the "War" out of the War Room
+
+See All
+Popular Security
+
+    Endpoint Protection v. 12.1 Small Business Edition...
+    Endpoint Protection v. 12.1 Small Business Edition...
+    as low as $15.00
+    See more »
+
+Subscribe to the Security Watch Newsletter
+By submitting your email address you are consenting to receive email notifications from IDG. You may withdraw your consent at any time. Please refer to our privacy policy for more information.
+See All Newsletters »
+Today's Special Offers
+
+    Try unlimited courses from Skillfeed, free!
+    Learn tech, coding, design, and more--free for 30 days.
+    Download the free PCWorld Daily iPad App!
+    Check out PCWorld Daily and uncover the latest in the PC ecosystem for home, business, or play.
+    Yes, It’s Possible to Never Drop a Call Again
+    Picture a world where you always have full bars at home, at work, or on the go—it’s finally here.
+    ASUS Commercial Mini PCs
+    Make a back-saving upgrade with the ASUS E810, VivoPC, VivoMini or Chromebox
+    Managing Mac in a Windows world
+    What SCCM is to Windows, the Casper Suite is to OS X. See for yourself
+    Agile Development, Better Software & DevOps Conference West
+    Bringing all aspects of the software development lifecycle to the forefront, register using code COTH15 and save up to $200 off your registration. (Offer valid on packages o

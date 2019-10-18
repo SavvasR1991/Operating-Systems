@@ -1,0 +1,133 @@
+Introduction
+
+URL rewriting can be one of the best and quickest ways to improve the usability and search friendliness of your site. It can also be the source of near-unending misery and suffering. Definitely worth playing carefully with it - lots of testing is recommended. With great power comes great responsibility, and all that.
+
+There are several other guides on the web already, that may suit your needs better than this one.
+
+    Apache URL Rewriting Guide - The best guide around
+
+Before reading on, you may find it helpful to have the mod_rewrite cheat sheet and/or the regular expressions cheat sheet handy. A basic grasp of the concept of regular expressions would also be very helpful.
+What is "URL Rewriting"?
+
+Most dynamic sites include variables in their URLs that tell the site what information to show the user. Typically, this gives URLs like the following, telling the relevant script on a site to load product number 7.
+http://www.pets.com/show_a_product.php?product_id=7
+
+The problems with this kind of URL structure are that the URL is not at all memorable. It's difficult to read out over the phone (you'd be surprised how many people pass URLs this way). Search engines and users alike get no useful information about the content of a page from that URL. You can't tell from that URL that that page allows you to buy a Norwegian Blue Parrot (lovely plumage). It's a fairly standard URL - the sort you'd get by default from most CMSes. Compare that to this URL:
+http://www.pets.com/products/7/
+
+Clearly a much cleaner and shorter URL. It's much easier to remember, and vastly easier to read out. That said, it doesn't exactly tell anyone what it refers to. But we can do more:
+http://www.pets.com/parrots/norwegian-blue/
+
+Now we're getting somewhere. You can tell from the URL, even when it's taken out of context, what you're likely to find on that page. Search engines can split that URL into words (hyphens in URLs are treated as spaces by search engines, whereas underscores are not), and they can use that information to better determine the content of the page. It's an easy URL to remember and to pass to another person.
+
+Unfortunately, the last URL cannot be easily understood by a server without some work on our part. When a request is made for that URL, the server needs to work out how to process that URL so that it knows what to send back to the user. URL rewriting is the technique used to "translate" a URL like the last one into something the server can understand.
+Platforms and Tools
+
+Depending on the software your server is running, you may already have access to URL rewriting modules. If not, most hosts will enable or install the relevant modules for you if you ask them very nicely.
+
+Apache is the easiest system to get URL rewriting running on. It usually comes with its own built-in URL rewriting module, mod_rewrite, enabled, and working with mod_rewrite is as simple as uploading correctly formatted and named text files.
+
+IIS, Microsoft's server software, doesn't include URL rewriting capability as standard, but there are add-ons out there that can provide this functionality. ISAPI_Rewrite is the one I recommend working with, as I've so far found it to be the closest to mod_rewrite's functionality. Instructions for installing and configuring ISAPI_Rewrite can be found at the end of this article.
+
+The code that follows is based on URL rewriting using mod_rewrite.
+Basic URL Rewriting
+
+To begin with, let's consider a simple example. We have a website, and we have a single PHP script that serves a single page. Its URL is:
+http://www.pets.com/pet_care_info_07_07_2008.php
+
+We want to clean up the URL, and our ideal URL would be:
+http://www.pets.com/pet-care/
+
+In order for this to work, we need to tell the server to internally redirect all requests for the URL "pet-care" to "pet_care_info_07_07_2008.php". We want this to happen internally, because we don't want the URL in the browser's address bar to change.
+
+To accomplish this, we need to first create a text document called ".htaccess" to contain our rules. It must be named exactly that (not ".htaccess.txt" or "rules.htaccess"). This would be placed in the root directory of the server (the same folder as "pet_care_info_07_07_2008.php" in our example). There may already be an .htaccess file there, in which case we should edit that rather than overwrite it.
+
+The .htaccess file is a configuration file for the server. If there are errors in the file, the server will display an error message (usually with an error code of "500"). If you are transferring the file to the server using FTP, you must make sure it is transferred using the ASCII mode, rather than BINARY. We use this file to perform 2 simple tasks in this instance - first, to tell Apache to turn on the rewrite engine, and second, to tell apache what rewriting rule we want it to use. We need to add the following to the file:
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^pet-care/?$    pet_care_info_01_02_2008.php    [NC,L]    # Handle requests for "pet-care"
+
+A couple of quick items to note - everything following a hash symbol in an .htaccess file is ignored as a comment, and I'd recommend you use comments liberally; and the "RewriteEngine" line should only be used once per .htaccess file (please note that I've not included this line from here onwards in code example).
+
+The "RewriteRule" line is where the magic happens. The line can be broken down into 5 parts:
+
+    RewriteRule - Tells Apache that this like refers to a single RewriteRule.
+    ^/pet-care/?$ - The "pattern". The server will check the URL of every request to the site to see if this pattern matches. If it does, then Apache will swap the URL of the request for the "substitution" section that follows.
+    pet_care_info_01_02_2003.php - The "substitution". If the pattern above matches the request, Apache uses this URL instead of the requested URL.
+    [NC,L] - "Flags", that tell Apache how to apply the rule. In this case, we're using two flags. "NC", tells Apache that this rule should be case-insensitive, and "L" tells Apache not to process any more rules if this one is used.
+    # Handle requests for "pet-care" - Comment explaining what the rule does (optional but recommended)
+
+The rule above is a simple method for rewriting a single URL, and is the basis for almost all URL rewriting rules.
+Patterns and Replacements
+
+The rule above allows you to redirect requests for a single URL, but the real power of mod_rewrite comes when you start to identify and rewrite groups of URLs based on patterns they contain.
+
+Let's say you want to change all of your site URLs as described in the first pair of examples above. Your existing URLs look like this:
+http://www.pets.com/show_a_product.php?product_id=7
+
+And you want to change them to look like this:
+http://www.pets.com/products/7/
+
+Rather than write a rule for every single product ID, you of course would rather write one rule to manage all product IDs. Effectively you want to change URLs of this format:
+http://www.pets.com/show_a_product.php?product_id={a number}
+
+And you want to change them to look like this:
+http://www.pets.com/products/{a number}/
+
+In order to do so, you will need to use "regular expressions". These are patterns, defined in a specific format that the server can understand and handle appropriately. A typical pattern to identify a number would look like this:
+[0-9]+
+
+The square brackets contain a range of characters, and "0-9" indicates all the digits. The plus symbol indicates that the pattern will idenfiy one or more of whatever precedes the plus - so this pattern effectively means "one or more digits" - exactly what we're looking to find in our URL.
+
+The entire "pattern" part of the rule is treated as a regular expression by default - you don't need to turn this on or activate it at all.
+RewriteRule    ^products/([0-9]+)/?$    show_a_product.php?product_id=$1    [NC,L]    # Handle product requests
+
+The first thing I hope you'll notice is that we've wrapped our pattern in brackets. This allows us to "back-reference" (refer back to) that section of the URL in the following "substitution" section. The "$1" in the substitution tells Apache to put whatever matched the earlier bracketed pattern into the URL at this point. You can have lots of backreferences, and they are numbered in the order they appear.
+
+And so, this RewriteRule will now mean that Apache redirects all requests for domain.com/products/{number}/ to show_a_product.php?product_id={same number}.
+Regular Expressions
+
+A complete guide to regular expressions is rather beyond the scope of this article. However, important points to remember are that the entire pattern is treated as a regular expression, so always be careful of characters that are "special" characters in regular expressions.
+
+The most instance of this is when people use a period in their pattern. In a pattern, this actually means "any character" rather than a literal period, and so if you want to match a period (and only a period) you will need to "escape" the character - precede it with another special character, a backslash, that tells Apache to take the next character to be literal.
+
+For example, this RewriteRule will not just match the URL "rss.xml" as intended - it will also match "rss1xml", "rss-xml" and so on.
+RewriteRule    ^rss.xml$    rss.php    [NC,L]    # Change feed URL
+
+This does not usually present a serious problem, but escaping characters properly is a very good habit to get into early. Here's how it should look:
+RewriteRule    ^rss\.xml$    rss.php    [NC,L]    # Change feed URL
+
+This only applies to the pattern, not to the substitution. Other characters that require escaping (referred to as "metacharacters") follow, with their meaning in brackets afterwards:
+
+    . (any character)
+    * (zero of more of the preceding)
+    + (one or more of the preceding)
+    {} (minimum to maximum quantifier)
+    ? (ungreedy modifier)
+    ! (at start of string means "negative pattern")
+    ^ (start of string, or "negative" if at the start of a range)
+    $ (end of string)
+    [] (match any of contents)
+    - (range if used between square brackets)
+    () (group, backreferenced group)
+    | (alternative, or)
+    \ (the escape character itself)
+
+Using regular expressions, it is possible to search for all sorts of patterns in URLs and rewrite them when they match. Time for another example - we wanted earlier to be able to indentify this URL and rewrite it:
+
+http://www.pets.com/parrots/norwegian-blue/
+
+And we want to be able to tell the server to interpret this as the following, but for all products:
+http://www.pets.com/get_product_by_name.php?product_name=norwegian-blue
+
+And we can do that relatively simply, with the following rule:
+RewriteRule    ^parrots/([A-Za-z0-9-]+)/?$    get_product_by_name.php?product_name=$1    [NC,L]    # Process parrots
+
+With this rule, any URL that starts with "parrots" followed by a slash (parrots/), then one or more (+) of any combination of letters, numbers and hyphens ([A-Za-z0-9-]) (note the hyphen at the end of the selection of characters within square brackets - it must be added there to be treated literally rather than as a range separator). We reference the product name in brackets with $1 in the substitution.
+
+We can make it even more generic, if we want, so that it doesn't matter what directory a product appears to be in, it is still sent to the same script, like so:
+RewriteRule    ^[A-Za-z-]+/([A-Za-z0-9-]+)/?$    get_product_by_name.php?product_name=$1    [NC,L]    # Process all products
+
+As you can see, we've replaced "parrots" with a pattern that matches letter and hyphens. That rule will now match anything in the parrots directory or any other directory whose name is comprised of at least one or more letters and hyphens.
+Flags
+
+Flags are added to the end of a rewrite rule to tell Apache how to interpret and handle the rule. They can be used to tell apache to treat the rule as case-insensitive, to stop processing rules if the current one matches, or a variety of other options. They are comma-separated, and contained in square brackets. Here's a list of the flags, with their meanings (this information is included on the cheat sheet, so no need to try to learn them all).

@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1414815623 source:c:\users\rostantakia\desktop\myphones\hashingtable.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415112355 c:\users\rostantakia\desktop\myphones\hashingtable.h
+	<iostream>
+	<string>
+
+1415112008 source:c:\users\rostantakia\desktop\myphones\main.cpp
+	<stdio.h>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415109283 source:c:\users\rostantakia\desktop\myphones\inverted_index.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415109456 source:c:\users\rostantakia\desktop\myphones\command_file.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415123701 source:c:\users\rostantakia\desktop\savvasrostantis\hashingtable.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415112355 c:\users\rostantakia\desktop\savvasrostantis\hashingtable.h
+	<iostream>
+	<string>
+
+1415113742 source:c:\users\rostantakia\desktop\savvasrostantis\inverted_index.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415121150 source:c:\users\rostantakia\desktop\savvasrostantis\command_file.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415124920 source:c:\users\rostantakia\desktop\savvasrostantis\main.cpp
+	<stdio.h>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415125254 source:c:\users\rostantakia\desktop\Σάββας Ροστάντης\Πανεπιστήμιο Πληροφορική και Τηλεπικοινωνίες\5o Εξάμηνο\Λειτουργικά Συστήματα\Εργασίες\Εργασία 1\savvasrostantis\command_file.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415112356 c:\users\rostantakia\desktop\Σάββας Ροστάντης\Πανεπιστήμιο Πληροφορική και Τηλεπικοινωνίες\5o Εξάμηνο\Λειτουργικά Συστήματα\Εργασίες\Εργασία 1\savvasrostantis\hashingtable.h
+	<iostream>
+	<string>
+
+1415123702 source:c:\users\rostantakia\desktop\Σάββας Ροστάντης\Πανεπιστήμιο Πληροφορική και Τηλεπικοινωνίες\5o Εξάμηνο\Λειτουργικά Συστήματα\Εργασίες\Εργασία 1\savvasrostantis\hashingtable.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415113744 source:c:\users\rostantakia\desktop\Σάββας Ροστάντης\Πανεπιστήμιο Πληροφορική και Τηλεπικοινωνίες\5o Εξάμηνο\Λειτουργικά Συστήματα\Εργασίες\Εργασία 1\savvasrostantis\inverted_index.cpp
+	<iostream>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+
+1415124922 source:c:\users\rostantakia\desktop\Σάββας Ροστάντης\Πανεπιστήμιο Πληροφορική και Τηλεπικοινωνίες\5o Εξάμηνο\Λειτουργικά Συστήματα\Εργασίες\Εργασία 1\savvasrostantis\main.cpp
+	<stdio.h>
+	<cstdlib>
+	<string.h>
+	"hashingtable.h"
+

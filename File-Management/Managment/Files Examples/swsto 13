@@ -1,0 +1,11 @@
+Automated XML and XSD documentation with full WYSIWYG authoring
+
+f. A URL uses forward slashes (/) and dots to separate its parts.
+g. A URL is usually in some kind of English, but numbers are also allowed.
+
+Some examples for you:
+
+http://english.pravda.ru/
+https://citizensbank.ca/login
+ftp://211.14.19.101
+telnet://hollis.harvard.edu

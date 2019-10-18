@@ -1,0 +1,24 @@
+#!/bin/bash
+DIR=$(pwd)			
+
+
+if [ "$1" == "clean" ] 
+then
+	
+	echo "Clean up.."
+	rm -rfv HashFunction/build/*
+else
+	echo "Running project.."
+	echo "CMake Building.."
+	cd HashFunction
+	cd build
+	cmake ..
+	echo "CMake Build done"
+	echo "Build project..."
+	make
+	echo "Build done..."
+	./HashFunction
+
+fi
+
+

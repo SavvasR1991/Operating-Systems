@@ -1,0 +1,103 @@
+
+T
+
+    ★☆☆☆☆ 
+
+URLs in Greek, Greeklish or English? What is the best way to get great ranking?
+Jan 23, 2013 - Posted by TRIANTAFYLLENIA EVANGELINOU in Technical SEO Issues
+
+2 Responses | 905 Views
+
+    Hello all,
+
+    I am Greek and I have a quite strange question for you. 
+
+    Greek characters are generally recognized as special characters and need to have UTF-8 encoding. 
+
+    The question is about the URLs of Greek websites.
+
+    According the advice of Google webmasters blog we should never put the raw greek characters into the URL of a link. We always should use the encoded version if we decide to have Greek characters and encode them or just use  latin characters in the URL. Having Greek characters un-encoded could likely cause technical difficulties with some services, e.g. search engines or other url-processing web pages. 
+
+    To give you an example let's look at
+
+    A) http://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%B2%CE%B5%CF%84%CE%AF%CE%B1 which is the URL with the encoded Greek characters and it shows up in the browser as B) http://el.wikipedia.org/wiki/Ελβετία
+
+    The problem with A is that everytime we need to copy the URL and paste it somewhere (in an email, in a social bookmark site, social media site etc) the URL appears like the A, plenty of strange characters and %. This link sometimes may cause broken link issues especially when we try to submit it in social networks and social bookmarks. 
+
+    On the other hand, googlebot reads that url but I am wondering if there is an advantage for the websites who keep the encoded URLs or not (in compairison to the sites who use Greeklish in the URLs)!
+
+    So the question is:
+
+     For the SEO issues, is it better to use Greek characters (encoded like this one  http://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%B2%CE%B5%CF%84%CE%AF%CE%B1) in the URLs or would it be better to use just Greeklish (for example http://el.wikipedia.org/wiki/Elvetia ?
+
+    Thank you very much for your help!
+
+    Regards,
+
+    Lenia
+
+     
+
+Share
++ Respond to Question
+2 Responses
+
+    430760
+        ★★★★★ 
+    Tom Roberts
+    CEO & Head of Digital Marketing at So What? Media
+        Jan 23, 2013 
+
+        This is a really good question, Lenia. Really, really good, in fact.
+
+        Let's break this down into a number of factors:
+
+        Having localised URLs (by that I mean URLs, written in the country's language) -  From an SEO perspective, I do believe there is some correlation that having localised URLs helps to rank higher, in the same way that having a keyword in the URL may help - having this keyword in the country's language would, by default, work the same way.  However, the SEO benefit of doing so isn't that big, I'd see it as only a little boost, so I wouldn't let the SEO side weigh too heavily on your decision.
+
+        Now, having localised URLs for a user perspective is something that I think is very useful. I'd see it as a bigger plus for a user than I would for SEO purposes.  I think having localised URLs shows the user that you're a part of that country, not just a larger corporation with an international presence but no real interest in the country for example.  I think it helps users recognise and anticipate what the URLs would be for their user journey as well.  Also, (I don't know how relative this might be for you) but having localised URLs can definitely help for offline campaigns and promotion.  Say you were running some newspaper or billboard ads and you wanted to track how many people were then visiting your site as a result, you might want to setup a custom URL or search term for the campaign.  So, you're newspaper advert would have "Visit www.domain.com/customURLhere/" on it.  This would look infinitely better if it was written in the localised language (although I suppose you could always setup a 301 redirect for the URL).
+
+        Ultimately, however, I think you're decision should largely be influenced on the technical implications.  The SEO value would be slight, but not that significant whichever method you choose.  I would go with whatever solution would be easiest for you technically - it sounds like it would be easier to accommodate user and SEO factors, rather than having to accommodate technical factors for a slight SEO gain.
+
+        Just my input on the issue, and so I'd love to hear more from others on it - as I think it's a great question which could do with the input of some of the talented folk here.
+        Respond
+
+    Share 
+
+    T
+    TRIANTAFYLLENIA EVANGELINOU
+        Jan 29, 2013 
+
+        Hi Tom,
+
+        I really appreciate your detailed answer.
+
+        You give a lot of information here. Thanks.
+
+        Taking into account the 3 main points you mention I would go with the Greeklish.
+
+        I think I should provide explanations about the term Greeklish. The official language of Greece is modern Greek. Modern Greek has a specific alphabet and it is not the same as the latin alphabet. On the other hand when a Greek person write Greek words by using the latin alphabet, then that is called Greeklish (Greek + english). It is a quick and easy way to write mms, imessages without paying attention on the orthography.
+
+        A URL in Greeklish is understandable by people in Greece => it can be considered as localised URL
+
+        A URL in Greeklish can easily be shared with no particular technical implications.
+
+        On the other hand the wikipedia articles use the encoded Greek Characters in the URL.
+
+        Well, I think if the SEO benefit is not that big, I would go with the Greeklish solutions.
+
+        I would be glad to have the feedback of other experts about that subject.
+
+        Tom thank you very much!
+
+        Regards,
+
+        Lenia
+
+         
+        Respond
+
+            Share 
+
++ Respond to Question
+
+Hey friend! Have fun exploring Q&A, but in order to ask your own questions, comment, or give thumbs up, you need to be logged in to your Moz Pro account. You can also earn access by receiving 500 MozPoints from participating in YouMoz and the Moz Blog! Learn more. 

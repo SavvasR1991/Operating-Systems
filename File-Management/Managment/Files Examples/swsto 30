@@ -1,0 +1,85 @@
+Why use the mobile version or at least a simpler version of a web site when Maemo devices are capable of accessing the full version? Some reasons:
+
+    Speed -- simpler versions may be considerably faster because they lack Flash and JavaScript. Full versions of websites are sometimes designed to run on desktop processors using browsers with JavaScript optimizations.
+    Focus -- simpler versions are often to the point, more in keeping with the spirit of mobile apps vs. desktop apps.
+    Compatibility -- sometimes the full version of a web site doesn't support Maemo devices properly. 
+
+On talk.maemo.org, there are periodic requests for mobile versions of sites.
+Contents [hide]
+
+    1 Shopping Sites
+    2 Application providers
+    3 Various Google Services
+    4 WebMail / Social
+    5 News / Information Sites
+    6 Search
+    7 Common Patterns
+
+[edit] Shopping Sites
+Mobile shopping sites Site   ↓	URL   ↓	Notes
+Amazon 	http://www.amazon.com/mobile 	
+[edit] Application providers
+Mobile application providers Site   ↓	URL   ↓	Notes
+Ovi store 	http://www.ovi.mobi/ 	
+[edit] Various Google Services
+Mobile Google services Site   ↓	URL   ↓	Notes
+Google+ 	https://plus.google.com/app/plus/mp/ 	
+Google Calendar 	http://www.google.com/calendar/m 	Lists appointments.
+Google Calendar (Domain) 	http://www.google.com/calendar/hosted/[your domain]/m 	Lists appointments.
+Google Docs 	http://docs.google.com/m 	Some features are view-only. Spreadsheet can only view a column at a time. Opera Mobile user agent enables basic spreadsheet editing.
+Google Maps 	http://maps.google.com/m 	Look up a place. View a map in simple HTML with links for zooming and shifting the display
+Google News 	http://news.google.com/m 	May direct you to mobile version of news site
+Google Reader 	http://www.google.com/reader/m 	Displays simple text version of article
+Google Reader "Chunky" 	http://www.google.com/reader/i/ 	More touch friendly
+Google Search 	http://www.google.com/m 	May direct you to mobile version of searched-for site
+Google Tasks 	http://mail.google.com/tasks/m 	part of Gmail
+Google Tasks "Chunky" 	https://mail.google.com/tasks/android 	More touch friendly
+Google Voice 	http://www.google.com/voice/m 	
+Gmail 	http://m.gmail.com/ 	Can also click "Simple HTML" link for more functionality
+Gmail "Chunky" 	http://mail.google.com/mail/x/gdlakb-/gp/ 	More touch friendly
+Gmail "Chunky" (Domain) 	https://mail.google.com/a/[your domain]/x/1gjikl11t3cl1 	More touch friendly
+YouTube 	http://m.youtube.com 	
+YouTube 	http://youtube.com/xl 	Extra-large buttons
+[edit] WebMail / Social
+Mobile webmail/social sites Site   ↓	URL   ↓	Notes
+Facebook 	http://m.facebook.com/ 	mobile site
+Facebook 	http://0.facebook.com/ 	mobile site without photos, free on some mobile networks (eg 3UK).
+Facebook 	http://touch.facebook.com/ 	Touch site
+FriendFeed 	http://friendfeed.com/iphone 	
+Google+ 	see above 	
+Gmail 	see above 	
+Hotmail Mobile 	http://mail.live.com/m 	Obsolete?
+Hotmail Mobile 	https://mssl.mail.live.com/m/?bfv=wm 	Works with Outlook.com
+Hotmail Mobile Alt 	http://mobile.live.com/hm 	
+Hotmail Mobile (Switch off) 	http://profile.live.com/contacts?bfv=um 	Useful if you are stuck on mobile view. Click the link, then click PC Site (located at the bottom)
+MySpace 	http://m.myspace.com/ 	
+Twitter 	http://mobile.twitter.com/ 	
+Yahoo 	http://m.yahoo.com/ 	"Mail" link is in upper right
+[edit] News / Information Sites
+Modile news/information sites Site 	URL 	Notes
+Ars Technica 	http://arstechnica.com 	recognizes some user agents
+CNet 	http://m.cnet.com 	
+Google News 	http://news.google.com/m 	May direct you to mobile version of news site
+[edit] Search
+Mobile search sites Site   ↓	URL   ↓	Notes   ↓
+Bing 	http://m.bing.com/ 	
+Google 	http://www.google.com/m 	
+Yahoo 	http://m.yahoo.com/ 	
+[edit] Common Patterns
+
+A quick glance at this table shows you that mobile-friendly URLs often fall into certain patterns:
+
+    m.site.com
+    www.site.mobi
+    www.site.com/m
+    www.site.com/mobile 
+
+Knowing these patterns, you can discover other mobile-friendly sites.
+Category: Web
+
+    This page was last modified on 21 March 2014, at 01:25.
+    This page has been accessed 28,389 times.
+
+    All Content CC Legal Privacy policy About maemo.org wiki Powered by MediaWiki 
+
+

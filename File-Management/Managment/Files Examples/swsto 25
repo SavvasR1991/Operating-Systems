@@ -1,0 +1,327 @@
+Uniform resource locator
+From Wikipedia, the free encyclopedia
+"URL" redirects here. For other uses, see URL (disambiguation).
+This Euler diagram shows that a uniform resource identifier (URI) is either a uniform resource locator (URL), or a uniform resource name (URN), or both.
+
+A uniform resource locator (URL) is a reference to a resource that specifies the location of the resource on a computer network and a mechanism for retrieving it. A URL is a specific type of uniform resource identifier (URI).[1] although many people use the two terms interchangeably.[2] A URL implies the means to access an indicated resource, which is not true of every URI.[2][3] URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications.
+
+Most web browsers display the URL of a web page above the page in an address bar. A typical URL has the form http://www.example.com/index.html, which indicates the protocol type (http), the domain name, (www.example.com), and the specific web page (index.html).
+
+Contents
+
+    1 History
+    2 Syntax
+    3 List of allowed URL characters
+        3.1 Unreserved
+        3.2 Reserved
+    4 Relationship to URI
+    5 Internet hostnames
+    6 Protocol-relative URLs
+    7 Internationalized URL
+    8 See also
+    9 References
+    10 External links
+
+History
+
+The Uniform Resource Locator was standardized in 1994[4] by Tim Berners-Lee and the URI working group of the Internet Engineering Task Force (IETF) as an outcome of collaboration started at the IETF Living Documents "Birds of a Feather" session in 1992.[5][6] The format combines the pre-existing system of domain names (created in 1985) with file path syntax, where slashes are used to separate directory and file names. Conventions already existed where server names could be prepended to complete file paths, preceded by a double-slash (//).[7]
+
+Berners-Lee later regretted the use of dots to separate the parts of the domain name within URIs, wishing he had used slashes throughout.[7] For example, http://www.example.com/path/to/name would have been written http:com/example/www/path/to/name. Berners-Lee has also said that, given the colon following the URI scheme, the two slashes before the domain name were also unnecessary.[8]
+Syntax
+Main article: URI scheme § Generic syntax
+
+Every HTTP URL consists of the following, in the given order. Several schemes other than HTTP also share this general format, with some variation.
+
+    the scheme name (commonly called protocol, although not every URL scheme is a protocol, e.g. mailto is not a protocol)
+    a colon, two slashes,[9][8]
+    a host, normally given as a domain name[10] For example, http://www.example.com/path/to/name would have been written http:com/example/www/path/to/name[7] but sometimes as a literal IP address
+    optionally a colon followed by a port number
+    the full path of the resource
+
+The scheme says how to connect, the host specifies where to connect, and the remainder specifies what to ask for.
+
+For programs such as Common Gateway Interface (CGI) scripts, this is followed by a query string,[11][12] and an optional fragment identifier.[13]
+
+The syntax is:
+
+    scheme://[user:password@]domain:port/path?query_string#fragment_id
+
+Component details:
+
+    The scheme, which in many cases is the name of a protocol (but not always), defines how the resource will be obtained. Examples include http, https, ftp, file and many others. Although schemes are case-insensitive, the canonical form is lowercase.
+    The domain name or literal numeric IP address gives the destination location for the URL. A literal numeric IPv6 address may be given, but must be enclosed in [ ] e.g. [db8:0cec::99:123a].
+
+        The domain google.com, or its numeric IP address 173.194.34.5, is the address of Google's website.
+
+    The domain name portion of a URL is not case sensitive since DNS ignores case:
+
+        http://en.example.org/ and HTTP://EN.EXAMPLE.ORG/ both open the same page.
+
+    The port number, given in decimal, is optional; if omitted, the default for the scheme is used.
+
+        For example, http://vnc.example.com:5800 connects to port 5800 of vnc.example.com, which may be appropriate for a VNC remote control session. If the port number is omitted for an http: URL, the browser will connect on port 80, the default HTTP port. The default port for an https: request is 443.
+
+    The path is used to specify and perhaps find the resource requested. This path may or may not describe folders on the file system in the web server. It may be very different from the arrangement of folders on the web server. It is case-sensitive,[14] though it may be treated as case-insensitive by some servers, especially those based on Microsoft Windows.
+
+        If the server is case sensitive and http://en.example.org/wiki/URL is correct, then http://en.example.org/WIKI/URL or http://en.example.org/wiki/url will display an HTTP 404 error page, unless these URLs point to valid resources themselves.
+
+    The query string contains data to be passed to software running on the server. It may contain name/value pairs separated by ampersands, for example
+
+        ?first_name=John&last_name=Doe.
+
+    The fragment identifier, if present, specifies a part or a position within the overall resource or document.
+
+        When used with HTML, it usually specifies a section or location within the page, and used in combination with Anchor elements or the "id" attribute of an element, the browser is scrolled to display that part of the page.
+
+The scheme name defines the namespace, purpose, and the syntax of the remaining part of the URL. Software will try to process a URL according to its scheme and context. For example, a web browser will usually dereference the URL http://example.org:80 by performing an HTTP request to the host at example.org, using port number 80.
+
+Other examples of scheme names include https, gopher, wais, ftp. URLs with https as a scheme (such as https://example.com/) require that requests and responses will be made over a secure connection to the website. Some schemes that require authentication allow a username, and perhaps a password too, to be embedded in the URL, for example ftp://asmith@ftp.example.org. Passwords embedded in this way are not conducive to security, but the full possible syntax is
+
+    scheme://username:password@domain:port/path?query_string#fragment_id
+
+Other schemes do not follow the HTTP pattern. For example, the mailto scheme only uses valid email addresses. When clicked on in an application, the URL mailto:bob@example.com may start an e-mail composer with the address bob@example.com in the To field. The tel scheme is even more different; it uses the public switched telephone network for addressing, instead of domain names representing Internet hosts.
+List of allowed URL characters
+Unreserved
+
+The alphanumerical upper and lower case character may optionally be encoded:
+
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+    a b c d e f g h i j k l m n o p q r s t u v w x y z
+    0 1 2 3 4 5 6 7 8 9 - _ . ~
+
+Reserved
+
+Special symbols must sometimes be percent-encoded:
+
+    ! * ' ( ) ; : @ & = + $ , / ? % # [ ]
+
+Further details can for example be found in RFC 3986 and http://www.w3.org/Addressing/URL/uri-spec.html.
+Relationship to URI
+See also: URIs, Relationship to URL and URN
+
+A URL is a URI that, in addition to identifying a web resource, provides a means of locating the resource by describing its "primary access mechanism (e.g., its network location)".[15]
+Internet hostnames
+
+A hostname is a domain name assigned to a host computer. This is usually a combination of the host's local name with its parent domain's name. For example, en.example.org consists of a local hostname (en) and the domain name example.org. The hostname is translated into an IP address via the local hosts file, or the domain name system (DNS) resolver. It is possible for a single host computer to have several hostnames; but generally the operating system of the host prefers to have one hostname that the host uses for itself.
+
+Any domain name can also be a hostname, as long as the restrictions mentioned below are followed. For example, both "en.example.org" and "example.org" can be hostnames if they both have IP addresses assigned to them. The domain name "xyz.example.org" may not be a hostname if it does not have an IP address, but "aa.xyz.example.org" may still be a hostname. All hostnames are domain names, but not all domain names are hostnames.
+Protocol-relative URLs
+
+The protocol, or scheme, of a URL defines how the resource will be obtained. Two common protocols on the web are HTTP and HTTPS. For various reasons, many sites have been switching to permitting access through both the HTTP and HTTPS protocols.[16][17] Each protocol has advantages and disadvantages, including for some of the users that one or the other protocol either does not function, or is very undesirable. When a link contains a protocol specifier it results in the browser following the link using the specified protocol regardless of the potential desires of the user. It is possible to construct valid URLs without specifying a protocol which are called protocol-relative links (PRL) or protocol-relative URLs. Using PRLs on a page permits the viewer of the page to visit new pages using whichever protocol was used to obtain the page containing the link. This supports continuing to use whichever protocol the viewer has chosen to use for obtaining the current page when accessing new pages.[18]
+
+An example of a PRL is //en.wikipedia.org/wiki/Main_Page which is created by removing the protocol prefix.
+Internationalized URL
+
+Internet users are distributed throughout the world using a wide variety of languages and alphabets. Users expect to be able to create URLs in their own local alphabets.
+
+An internationalized resource identifier (IRI) is a form of URL that includes Unicode characters. All modern browsers support IRIs. The parts of the URL requiring special treatment for different alphabets are the domain name and path.[19] [20]
+
+The domain name in the IRI is known as an internationalized domain name (IDN). Web and Internet software automatically convert the domain name into punycode usable by the Domain Name System.
+
+For example, the Chinese web site http://見.香港 becomes the following for DNS lookup. xn-- indicates the character was not originally ASCII.[21]
+
+    http://xn--nw2a.xn--j6w193g/
+
+The URL path name can also be specified by the user in the local alphabet. If not already encoded, it is converted to Unicode, and any characters not part of the basic URL character set are converted to English letters using percent-encoding.
+
+For example, the following Japanese Web page http://domainname/引き割り.html becomes http://domainname/%E5%BC%95%E3%81%8D%E5%89%B2%E3%82%8A.html. The target computer decodes the address and displays the page.[22]
+See also
+
+    CURIE (Compact URI)
+    Forwardslash
+    Fragment identifier
+    Internationalized Resource Identifier (IRI)
+    Semantic URL
+    Typosquatting
+    URL normalization
+
+References
+
+Berners-Lee, T.; Fielding, R. (January 2005). "Uniform Resource Identifier (URI): Generic Syntax". www.ietf.org. Network Working Group. Retrieved 2014-09-05. "The term "Uniform Resource Locator" (URL) refers to the subset of URIs that, in addition to identifying a resource, provide a means of locating the resource by describing its primary access mechanism (e.g., its network "location")."
+RFC 3305
+Skeet, Jon (6 Oct 2008). "What's the difference between a URI and a URL?". StackOverflow. Retrieved 4 September 2014.
+RFC 1738 Uniform Resource Locators (URL). This RFC is now obsolete. It has been superseded by a newer RFC (see the RFC Index)
+"Living Documents BoF Minutes". W3.org. Retrieved 2011-12-26.
+"URL Specification". Retrieved 2011-12-26.
+Berners-Lee, Tim. "Frequently asked questions by the press". Retrieved 2010-02-03.
+"Technology | Berners-Lee 'sorry' for slashes". BBC News. 2009-10-14. Retrieved 2010-02-14.
+Berners-Lee has said that, given the colon following the URI scheme, the two slashes before the domain name were unnecessary.
+Berners-Lee also later regretted the use of dots to separate the parts of the domain name, wishing he had used slashes throughout.
+RFC 1738
+"PHP parse_url() Function". Retrieved 2009-03-12.
+"URL Syntax". Pangea.stanford.edu. 2004-07-20. Retrieved 2011-12-26.
+"RFC 3986: Uniform Resource Identifier (URI): Generic Syntax". Network Working group of the IETF. January 2005. p. 40. Retrieved 2013-04-24. "[...] the scheme and host are case-insensitive [...] The other generic syntax components are assumed to be case-sensitive unless specifically defined otherwise by the scheme [...]"
+Tim Berners-Lee, Roy T. Fielding, Larry Masinter. (January 2005). "Uniform Resource Identifier (URI): Generic Syntax". Internet Society. RFC 3986; STD 66.
+Lane, Ryan (19 July 2011). "Protocol relative URLs enabled on test.wikipedia.org". blog.wikimedia.org. Archived from the original on 16 February 2014. Retrieved 16 February 2014.
+Brewster (25 October 2013). "Reader Privacy at the Internet Archive". blog.archive.org. Archived from the original on 16 February 2014. Retrieved 16 February 2014.
+Eric Lawrence (24 June 2011). "Internet Explorer 9 Security Part 4: Protecting Consumers from Malicious Mixed Content". Retrieved 2014-06-25. (section "Troubleshooting Mixed Content with the F12 Developer Console")
+"An Introduction to Multilingual Web Addresses". Retrieved 11 January 2015.
+"What is Happening with International URLs". Retrieved 11 January 2015.
+"Are chinese characters allowed in URLs?". Retrieved 11 January 2015.
+
+    "An Introduction to Multilingual Web Addresses". Retrieved 11 January 2015.
+
+External links
+
+    RFC 3986 Uniform Resource Identifier (URI): Generic Syntax (ASCII version)
+    FGA: Making "http://example.com./" work like "http://www.example.com./"
+
+[hide]
+
+    v t e 
+
+Hypermedia
+Basics 	
+
+    Hypertext Hyperlink Hypervideo Adaptive hypermedia
+        educational authoring Hyperlinks in virtual worlds 
+
+Resource identifiers 	
+
+    Uniform resource identifier Internationalized resource identifier Dereferenceable Uniform Resource Identifier Uniform resource name Uniform resource locator Extensible resource identifier Persistent uniform resource locator Semantic URL 
+
+Concepts 	
+
+    anchor text click path Domain name click here Copyright aspects of hyperlinking and framing deep linking Fat link Fragment identifier Hostname Hypertext Inline linking inbound link/backlink HTTP referer image map Internal link Internet bookmark linkback Link relation Link rot Object hyperlinking Path Screen hotspot Source tracking transclusion URI scheme URL normalization URL redirection Website Web page XML namespace 
+
+Technology 	
+
+    CURIE Hypertext Transfer Protocol XLink 
+
+See also 	
+
+    Interactive novel Interactive fiction Hypertext poetry Timeline Copyright aspects of hyperlinking and framing World Wide Web 
+
+Categories:
+
+    Uniform resource locatorIdentifiers1994 introductions
+
+Navigation menu
+
+    Create account
+    Log in
+
+    Article
+    Talk
+
+    Read
+    Edit
+    View history
+
+    Main page
+    Contents
+    Featured content
+    Current events
+    Random article
+    Donate to Wikipedia
+    Wikipedia store
+
+Interaction
+
+    Help
+    About Wikipedia
+    Community portal
+    Recent changes
+    Contact page
+
+Tools
+
+    What links here
+    Related changes
+    Upload file
+    Special pages
+    Permanent link
+    Page information
+    Wikidata item
+    Cite this page
+
+Print/export
+
+    Create a book
+    Download as PDF
+    Printable version
+
+Languages
+
+    Afrikaans
+    Alemannisch
+    Ænglisc
+    العربية
+    Azərbaycanca
+    বাংলা
+    Беларуская
+    Беларуская (тарашкевіца)‎
+    Български
+    Bosanski
+    Català
+    Чӑвашла
+    Čeština
+    Cymraeg
+    Dansk
+    Deutsch
+    Eesti
+    Ελληνικά
+    Español
+    Esperanto
+    Euskara
+    فارسی
+    Français
+    Gaeilge
+    Galego
+    ગુજરાતી
+    한국어
+    हिन्दी
+    Hrvatski
+    Bahasa Indonesia
+    Interlingua
+    Íslenska
+    Italiano
+    עברית
+    Basa Jawa
+    ಕನ್ನಡ
+    Қазақша
+    Кыргызча
+    Latviešu
+    Lëtzebuergesch
+    Magyar
+    Македонски
+    മലയാളം
+    Bahasa Melayu
+    Монгол
+    Nederlands
+    日本語
+    Нохчийн
+    Norsk bokmål
+    Norsk nynorsk
+    Олык марий
+    ភាសាខ្មែរ
+    Polski
+    Português
+    Română
+    Русский
+    Scots
+    Simple English
+    Slovenčina
+    Slovenščina
+    Српски / srpski
+    Srpskohrvatski / српскохрватски
+    Svenska
+    தமிழ்
+    తెలుగు
+    ไทย
+    Тоҷикӣ
+    Türkçe
+    Українська
+    اردو
+    Vèneto
+    Tiếng Việt
+    ייִדיש
+    Yorùbá
+    粵語
+    中文
+
+Edit links
+
+    This page was last modified on 12 April 2015, at 15:36.
+    Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+

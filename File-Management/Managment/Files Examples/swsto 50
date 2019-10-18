@@ -1,0 +1,43 @@
+lmost all current ISO 3166-1 codes have been assigned and do exist in DNS. However, some of these are effectively unused. In particular, the ccTLDs for the Norwegian dependency Bouvet Island (bv) and the designation Svalbard and Jan Mayen (sj) do exist in DNS, but no subdomains have been assigned, and it is Norid policy not to assign any at present. Two French territories, bl (Saint Barthélemy) and mf (Saint Martin), still await local assignment by France's government.
+
+The code eh, although eligible as ccTLD for Western Sahara, has never been assigned and does not exist in DNS. Only one subdomain is still registered in gb[2][not in citation given (See discussion.)] (ISO 3166-1 for the United Kingdom) and no new registrations are being accepted for it. Sites in the United Kingdom generally use uk (see below).
+
+The former .um ccTLD for the U.S. Minor Outlying Islands was removed in April 2008. Under RFC 1591 rules .um is eligible as a ccTLD on request by the relevant governmental agency and local Internet user community.
+ASCII ccTLDs not in ISO 3166-1
+
+Several ASCII ccTLDs are in use that are not ISO 3166-1 two-letter codes. Some of these codes were specified in older versions of the ISO list.
+
+    uk (United Kingdom): The ISO 3166-1 code for the United Kingdom is GB. However, the JANET network had already selected uk as a top-level identifier for its pre-existing Name Registration Scheme, and this was incorporated into the DNS root. gb was assigned with the intention of a transition, but this never occurred and the use of uk is now entrenched.
+    su This obsolete ISO 3166 code for the Soviet Union was assigned when the Soviet Union was still extant; moreover, new su registrations are accepted.
+    ac (Ascension Island): This code is a vestige of IANA's decision in 1996 to allow the use of codes reserved in the ISO 3166-1 alpha-2 reserve list for use by the Universal Postal Union. The decision was later reversed, with Ascension Island now the sole outlier. (Three other ccTLDs, gg (Guernsey), im (Isle of Man) and je (Jersey) also fell under this category from 1996 until they received corresponding ISO 3166 codes in March 2006.)
+    eu (European Union): On September 25, 2000, ICANN decided to allow the use of any two-letter code in the ISO 3166-1 reserve list that is reserved for all purposes. Only EU currently meets this criterion. Following a decision by the EU's Council of Telecommunications Ministers in March 2002, progress was slow, but a registry (named EURid) was chosen by the European Commission, and criteria for allocation set: ICANN approved eu as a ccTLD, and it opened for registration on 7 December 2005 for the holders of prior rights. Since 7 April 2006, registration is open to all.
+    tp (the previous ISO 3166-1 code for East Timor): Being phased out in favor of tl since 2005.
+
+Historical ccTLDs
+
+There are two ccTLDs that have been deleted after the corresponding 2-letter code was withdrawn from ISO 3166-1: cs (for Czechoslovakia) and zr (for Zaire). There may be a significant delay between withdrawal from ISO 3166-1 and deletion from the DNS; for example, ZR ceased to be an ISO 3166-1 code in 1997, but the zr ccTLD was not deleted until 2001. Other ccTLDs corresponding to obsolete ISO 3166-1 codes have not yet been deleted. In some cases they may never be deleted due to the amount of disruption this would cause for a heavily used ccTLD. In particular, the Soviet Union's ccTLD su remains in use more than a decade after SU was removed from ISO 3166-1.
+
+The historical country codes dd for the German Democratic Republic and yd for South Yemen were eligible for a ccTLD, but not allocated; see also de and ye.
+
+The temporary reassignment of country code cs (Serbia and Montenegro) until its split into rs and me (Serbia and Montenegro, respectively) led to some controversies[3][4] about the stability of ISO 3166-1 country codes, resulting in a second edition of ISO 3166-1 in 2007 with a guarantee that retired codes will not be reassigned for at least 50 years, and the replacement of RFC 3066 by RFC 4646 for country codes used in language tags in 2006.
+
+The previous ISO 3166-1 code for Yugoslavia, YU, was removed by ISO on 2003-07-23, but the yu ccTLD remained in operation. Finally, after a two-year transition to Serbian rs and Montenegrin me, the .yu domain was phased out in March 2010.
+
+Australia was originally assigned the oz country code, which was later changed to au with the .oz domains moved to .oz.au.
+Internationalized ccTLDs
+
+An internationalized country code top-level domain (IDN ccTLD) is a top-level domain with a specially encoded domain name that is displayed in an end user application, such as a web browser, in its language-native script or alphabet, such as the Arabic alphabet, or a non-alphabetic writing system, such as Chinese characters. IDN ccTLDs are an application of the internationalized domain name (IDN) system to top-level Internet domains assigned to countries, or independent geographic regions.
+
+ICANN started to accept applications for IDN ccTLDs in November 2009,[5] and installed the first set into the Domain Names System in May 2010. The first set was a group of Arabic names for the countries of Egypt, Saudi Arabia, and the United Arab Emirates. By May 2010, 21 countries had submitted applications to ICANN, representing 11 languages.[6]
+
+ICANN requires all potential international TLDs to use at least one letter that does not resemble a Latin letter, or have at least three letters, in an effort to avoid IDN homograph attacks. Nor shall the international domain name look like another domain name, even if they have different alphabets. Between Cyrillic and Greek alphabets, for example, this could happen.
+Unconventional usage
+Main article: Vanity URL http://dsdsfdsfdfs.fbdfbdfbd.h.h.h.hj.jhf.hk.gf.hj.al
+	This section needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (March 2011)
+
+Lenient registration restrictions on certain ccTLDs have resulted in various domain hacks. Domain names such as I.am, tip.it, start.at and go.to form well-known English phrases, whereas others combine the second-level domain and ccTLD to form one word or one title, creating domains such as blo.gs of South Georgia and the South Sandwich Islands (gs), youtu.be of Belgium (be), del.icio.us of the United States (us), and cr.yp.to of Tonga (to). The .co domain of Colombia has been cited since 2010 as a potential competitor to generic TLDs for commercial use, because it may be an abbreviation for company.[7]
+
+Some ccTLDs may also be used for typosquatting. The domain cm of Cameroon has generated interest due to the possibility that people might miss typing the letter o for sites in the com.[8]
+Commercial usage
+
+Some of the world's smallest countries and non-sovereign or colonial entities with their own country codes have opened their TLDs for worldwide commercial use.

@@ -1,0 +1,310 @@
+Κ24: Προγραμματισμός Συστήματος
+Διδάσκουσα : Μέμα Ρουσσοπούλου
+Διδασκαλία :
+Δευτέρα 13 :00 - 15:00 ( Α 2 )
+Τρίτη 13 :00 - 1 5 :00 ( Α 2)
+Γραφείο : Α 38
+Ώρες Γραφείου : Τρίτη 15 :00 - 1 6 :00
+Email : mema @di.uoa.gr
+Web Page:
+http://cgi.di.uoa.gr/~mema/courses/k24/k24.html
+1Γενικές Πληροφορίες
+ΕΔΙΠ
+Miltos Kyriakakos – A24
+Μεταπτυχιακοί Συνεργάτες
+Georgios Balatsouras
+Serafeim Chatzopoulos
+Stamatios Christoforidis
+Panagiotis Diamantopoulos
+George Kastrinis
+Michalis Konstantopoulos
+Sotirios-Efstathios (Stathis) Maneas
+Emmanouil Papadomichelakis
+Dimitrianos Savva
+Yannis Kavvouras
+Ανακοινώσεις, εργασίες, χρήσιμοι
+σύνδεσμοι, και άλλες πληροφορίες
+στην ιστοσελίδα
+Να γραφτείτε στο Piazza class
+forum.
+2Βιβλίο
+M.J. Rochkind, Advanced Unix
+Programming, Prentice-Hall Software
+Series, Englewood Cliffs, NJ, 2004
+Άλλες χρήσιμες αναφορές στην
+ιστοσελίδα μαθήματος
+Διαφάνειες στην ιστοσελίδα του
+μαθήματος (ευχαριστίες στους κκ. Τάκη
+Σταματόπουλο, Αντώνιο Δελιγιαννάκη,
+και Αλέξη Δελή).
+3Βαθμολογία
+Programming Assignments: 50%
+Final Exam: 50%
+To pass the course, you must
+achieve:
+1) a score of at least 50% on HW1
+2) an average score of 50% on HW2
+and HW3
+3) a score of >=40% on final exam
+Same rules hold for September
+exam
+4Περιεχόμενα Μαθήματος
+Λειτουργικό σύστημα UNIX
+Προγραμματισμός σε κελύφη
+Προγραμματισμός λειτουργιών
+συστήματος σε C
+Χειρισμό λαθών
+Αποστολή/παραλαβή σημάτων
+Είσοδο/έξοδο χαμηλού επιπέδου
+Δημιουργία/τερματισμό διεργασιών
+Επικοινωνία μεταξύ διεργασιών μέσω
+σωλήνων, υποδοχών, ουρών
+μηνυμάτων, κοινής μνήμης, και
+σηματοφόρων
+Δημιουργία, τερματισμό και
+συγχρονισμό νημάτων
+5Homeworks
+HW 1 assigned end of this week
+DUE: Sunday March 15
+HW 2 assigned Mon March 23
+DUE: Saturday April 25
+HW 3 assigned Mon May 4
+DUE: Sunday March 24
+Late Policy: May submit up to 3 days
+late, with 5% penalty each day.
+Oral exam required; during the week
+of the deadline.
+6Λειτουργικό σύστημα
+Ενδιάμεσο πρόγραμμα μεταξύ
+χρήστη-υλικού συστήματος
+Στόχος
+Διευκόλυνση χρήσης υπολογιστή
+Αποδοτική χρήση υπολογιστή
+Διαχείρηση Πόρων
+Επεξεργαστές
+Κύρια και δευτερεύουσα μνήμη
+Συσκευές εισόδου/εξόδου
+Σύστημα διαχείρισης αρχείων
+μακροπρόθεσμη αποθήκευση
+πληροφοριών
+7Unix
+1969 Bell Laboratories (AT&T) σε
+μορφή assembly
+Ken Thompson
+1973 υλοποίηση σε γλώσσα C
+Brian Kernighan, Dennis Ritchie
+Πολλές αλλαγές βελτιώσεις από
+τότε
+Major Revision από Univ. of
+California, Berkeley (in the 1980s)
+Redevelopment for SPARC processor
+by SUN Microsystems (1990s)
+Release of Linux and ongoing
+development (1990s – now)
+Unix/Linux (in various versions
+and releases) now used on servers
+as well as PCs, notebooks,
+workstations, and mobile phones.
+8Χαρακτηριστικά Unix
+Πολλαπλοί χρήστες
+Πολλαπλές διεργασίες, διαμέριση
+χρόνου
+Παροχή ασφάλειας
+Υποστήριξη δικτύων
+∆ομή:
+Πυρήνας (kernel)
+Βοηθητικά προγράμματα
+Μεταγλωττιστές, διορθωτές, γλώσσες
+διαταγών
+Κέλυφος
+C, Bourne, Bash, Korn...
+9Χαρακτηριστικά Unix (2)
+Παροχή C συναρτήσεις για κλήσεις
+συστήματος
+∆ιαλογική επικοινωνία χρήστη μέσω
+του κελύφους
+Επιτρέπει προγραμματισμό του
+κελύφους
+∆ιάκριση πεζών-κεφαλαίων
+10Ιεραρχική Οργάνωση
+/
+bin etc home dev
+jim john mary tmp spool local
+var
+usr
+tmp
+bin
+Κατάλογος-Ρίζα (/)
+Τρέχων κατάλογος (.)
+Γονικός κατάλογος (..)
+Μονοπάτια απόλυτα και σχετικά
+Αρχεία
+Σύνδεσμοι
+Συσκευές
+11Λογαριασμός Χρήστη
+Όνομα και συνθηματικό χρήστη
+Κέλυφος αρχικής σύνδεσης
+Ομάδες χρήστη
+Κατάλογος αφετηρίας (home directory)
+mema@bowser's password:
+Linux bowser 2.6.24-23-generic #1 SMP Mon Jan 26
+00:13:11 UTC 2009 i686
+The programs included with the Ubuntu system are free
+software;
+the exact distribution terms for each program are described
+in the
+individual files in /usr/share/doc/*/copyright.
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to
+the extent permitted by
+applicable law.
+To access official Ubuntu documentation, please visit:
+http://help.ubuntu.com/
+Last login: Mon Jan 7 01:25:54 2008
+mema@bowser:~$ pwd
+/home/mema
+12Βασικές Εντολές
+man
+ls
+pwd
+cd
+mkdir
+rmdir
+cp
+mv
+rm
+cat
+lpr
+vi
+Εμφάνιση οδηγιών χρήσης εντολών
+Εμφάνιση περιεχομένων καταλόγου
+Μονοπάτι τρέχοντος καταλόγου
+Αλλαγή τρέχοντος καταλόγου
+∆ημιουργία καταλόγου
+∆ιαγραφή καταλόγου
+Αντιγραφή αρχείου/καταλόγου
+Μετακίνηση αρχείου
+∆ιαγραφή αρχείου
+Εμφάνιση περιεχομένων αρχείου
+Εκτύπωση αρχείου
+Κειμενογράφος οθόνης
+13PWD(1)
+PWD(1)
+User Commands
+NAME
+pwd - print name of current/working directory
+SYNOPSIS
+pwd [OPTION]
+DESCRIPTION
+Print the full filename of the current working
+directory.
+--help display this help and exit
+--version
+output version information and exit
+NOTE: your shell may have its own version of
+pwd, which usually supersedes the version described
+here. Please refer to your shell's documentation for
+details about the options it supports.
+14Όλα όσα περιέχουν τη
+λέξη manual (-k)
+linux02:/home/users/mema>man -k manual
+apropos (1)
+- search the manual page names and descriptions
+catman (8)
+- create or update the pre-formatted manual pages
+cddb-slave2-properties (1) - manual page for Gnome cddb-slave2-prope
+ecj (1)
+- manual page for eclipse JDT Compiler
+ecj-gcj (1)
+- manual page for eclipse JDT Compiler
+esdcompat (1)
+- manual page for pulseaudio esd wrapper 0.9.5
+gnome-volume-control (1) - manual page for Gnome gnome-volume
+grub-reboot (8) - manual page for grub-reboot 0.01
+gstreamer-properties (1) - manual page for Gnome gstreamer-properties
+man (1)
+- an interface to the on-line reference manuals
+manconv (1)
+- convert manual page from one encoding to another
+mandb (8)
+- create or update the manual page index caches
+manpath (1)
+- determine search path for manual pages
+missing (7)
+- missing manual pages
+pulseaudio (1)
+- manual page for pulseaudio 0.9.5
+readahead-list (8) - manual page for readahead-list: 0.20050517.0220
+readahead-watch (8) - manual page for readahead-watch: 0.20050517.0
+vumeter (1)
+- manual page for Gnome Volume Meter 2.1.0
+w3mman (1)
+- an interface to the on-line reference manuals by w
+whatis (1)
+- display manual page descriptions
+whereis (1)
+- locate the binary, source, and manual page files for a
+xman (1)
+- Manual page display program for the X Window Sys
+15Εντολή ls (-a, -l, -r)
+Τύπωσε και περιεχόμενα από ‘.’ (-a)
+Ότι το προηγούμενο, λεπτομερώς (-l)
+Αντίστροφη εκτύπωση (-r)
+Αρχείο που εκτελείται όταν ξεκινάει το κέλυφος:
+bash: .bashrc
+csh: .cshrc
+tcsh: .tcshrc
+16Δικαιώματα χρηστών
+Κάθε αρχείο/κατάλογος ανήκει
+στον δημιουργό του
+Κάθε χρήστης ανήκει σε μια ή
+περισσότερες ομάδες. Πχ:
+users, postgrads, dep, undergrads,.
+10 bits
+- rwx r-x
+r-x
+ιδιοκτήτη ομάδα υπόλοιποι
+1o bit συνήθως d (κατάλογος) ή
+‘-’ (κανονικό αρχείο)
+3 ομάδες τριών bit (ανάγνωση,
+εγγραφή, εκτέλεση)
+17Δικαιώματα χρηστών
+Αρχείο
+Κατάλογος
+Ανάγνωση,
+Περιεχόμενα
+r
+αντιγραφή
+καταλόγου
+Αλλαγή
+∆ιαγραφή,
+w αρχείου. ΟΧΙ
+δημιουργία αρχείων
+διαγραφή
+x
+Εκτέλεση
+αρχείου
+Πρόσβαση με
+εντολή cd. Αν δεν
+έχω ‘r’ δεν βλέπω
+όμως ονόματα των
+αρχείων
+18Εντολή ls (-d, -R, -t)
+Εντολή ls (-d, -R, -t)
+Μόνο για τον κατάλογο (-d)
+Αναδρομική εκτύπωση υποκαταλόγων (-R)
+Ταξινόμηση με βάση τελευταία μεταβολή (-t)
+19Εντολές pwd, cd,
+mkdir, rmdir
+Έξτρα σύμβολα στο τέλος ονόματος (-F)
+Μονοπάτι τρέχοντος καταλόγου
+rmdir -r (όχι για καταλόγους)
+20Εντολές cp (-i, -r), mv (-i), rm (-i, -r, -f)
+Αν υπάρχει, επιβεβαίωση (-i)
+Αν υπάρχει, επιβεβαίωση (-i)
+Αναδρομική αντιγραφή (-r)
+Αναδρομική διαγραφή (-r)
+rm -f (διαγραφή χωρίς ερώτηση – λιγότερο ισχυρό από το -i)
+21Κειμενογράφος vi
+vi/vim filename: edit the content of
+the file with name <filename>
+Two modes of operation

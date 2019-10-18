@@ -1,0 +1,30 @@
+
+I'm deploying a replacement site for a client but they don't want all their old pages to end in 404s. Keeping the old URL structure wasn't possible because it was hideous.
+
+So I'm writing a 404 handler that should look for an old page being requested and do a permanent redirect to the new page. Problem is, I need a list of all the old page URLs.
+
+I could do this manually, but I'd be interested if there are any apps that would provide me a list of relative (eg: /page/path, not http:/.../page/path) URLs just given the home page. Like a spider but one that doesn't care about the content other than to find deeper pages.
+web-crawler
+shareimprove this question
+	
+edited Apr 14 '14 at 21:10
+Kara
+2,50852237
+	
+asked May 13 '09 at 12:22
+Oli
+71.2k28140197
+	
+add a comment
+8 Answers
+active
+oldest
+votes
+up vote
+21
+down vote
+accepted
+	
+http://facebook.it
+I didn't mean to answer my own question but I just thought about running a sitemap generator. First one I found http://www.xml-sitemaps.com has a nice text output. Perfect for my needs.
+

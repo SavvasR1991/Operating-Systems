@@ -1,0 +1,182 @@
+ghhfg fhgyff fghfgh fhgJr. Member
+    Members http://hallow.gagagaga.asfsaasf.facebook.gr
+    PipPip
+    47 posts
+
+    5
+
+Posted 18 September 2014 - 01:16 PM
+
+How to auto-generate random URLs in PW? For example when we upload images on Tumblr, an URL to the post is created with a random number "95032257420":
+
+ 
+
+http://twotimesellio...ost/95032257420  
+
+ 
+
+And an URL for the image is created:
+
+ 
+
+http://31.media.tumb.6ky2bo1_500.jpg
+
+ 
+
+How can we do that in PW?
+
+#2 [Auto-generate random URLs: post #2] LostKobrakai
+
+    Excited Member
+    PW-Moderators
+    1,052 posts
+
+    850
+
+    LocationAugsburg, Germany
+
+Posted 18 September 2014 - 02:32 PM
+
+Have a look at these modules.
+
+ 
+
+http://modules.proce.ink-shortener/ 
+
+http://modules.proce.ield-generator/
+
+http://modules.proce.m-upload-names/
+
+Edited by netcarver, 18 September 2014 - 03:10 PM.
+Fixed first link - it was broken
+
+Website | My modules
+
+#3 [Auto-generate random URLs: post #3] Nico Knoll
+
+    Part-Time Nerd
+    PW-Moderators
+    1,711 posts
+
+    1350
+
+    LocationBerlin, Germany
+
+Posted 18 September 2014 - 03:08 PM
+
+Why would you want that?
+
+ 
+
+Btw.: Why not just using $page->id ?
+
+    OrganizedFellow likes this 
+
+My website | supercode.co | Modules I made | Buy me a beer  ^_^
+
+#4 [Auto-generate random URLs: post #4] OrganizedFellow
+
+    Sr. Member
+    Members
+    PipPipPipPip
+    387 posts
+
+    246
+
+    LocationEl Paso TX
+
+Posted 18 September 2014 - 03:23 PM
+
+hhmm. My interest has been piqued!
+
+#5 [Auto-generate random URLs: post #5] Pierre-Luc
+
+    Sr. Member
+    Members
+    PipPipPipPip
+    136 posts
+
+    168
+
+Posted 19 September 2014 - 05:13 PM
+
+As mentioned before, modules.processwire.com/modules/process-field-generator/ is a module I made that does exactly that. Reason why I personally needed it : the ID of content had to not be discoverable and a fixed length. Page IDs don't provide that.
+
+    cstevensjr likes this 
+
+Back to General Support
+
+
+
+Also tagged with one or more of these keywords: urls
+	Community Support →  General Support →  Any way to make urls end in .html, .xml, etc?
+Started by creativejay, 26 Feb 2015   urls 		
+
+    7 replies
+    253 views
+
+	
+Any way to make urls end in .html, .xml, etc? - last post by creativejay
+
+    creativejay
+    06 Mar 2015
+
+	Community Support →  General Support →  How to automatically rename image uploads?
+Started by aren, 28 Oct 2014   urls, images, upload 		
+
+    2 replies
+    395 views
+
+	
+How to automatically rename image uploads? - last post by aren
+
+    aren
+    01 Nov 2014
+
+	Answered Community Support →  API & Templates →  Using a different field to generate page URLs
+Started by statestreet, 26 Sep 2014   fields, URLs, names 		
+
+    8 replies
+    405 views
+
+	
+Using a different field to generate page URLs - last post by statestreet
+
+    statestreet
+    08 Oct 2014
+
+	Community Support →  General Support →  clean urls not working
+Started by benbyf, 14 Apr 2014   url, link, urls 		
+
+    10 replies
+    380 views
+
+	
+clean urls not working - last post by Soma
+
+    Soma
+    23 Apr 2014
+
+	Community Support →  Getting Started →  Custom URLs - Getting example.com/somename
+Started by Vineet Sawant, 06 Jan 2014   urls, profile 		
+
+    8 replies
+    741 views
+
+	
+Custom URLs - Getting example.com/somename - last post by Soma
+
+    Soma
+    23 Jan 2014
+
+0 user(s) are reading this topic
+
+0 members, 0 guests, 0 anonymous users
+
+    ProcessWire Support Forums → Community Support → General Support
+    Privacy Policy
+    Community Rules & Guidelines ·
+
+    RSS Feed Change Theme Contact Us Help 
+
+Community Forum Software by IP.Board 3.4.6

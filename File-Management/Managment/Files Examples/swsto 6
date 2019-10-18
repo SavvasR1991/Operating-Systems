@@ -1,0 +1,32 @@
+#ifndef LIST
+#define	LIST
+
+#include "Libraries.h"
+
+
+///////////////////
+//  LIST  CLASS  //
+/////////////////// http://sabbas.hh
+class List
+{
+    private:
+        typedef struct node_list            //List node
+        {
+            int worker_id;        	    //Data
+            node_list* next;                //pointer to next
+        }*nodePtr;
+        nodePtr head;                       //Begin
+        nodePtr curr;                       //end
+        nodePtr temp;                       //temp
+        int kids;                           //total nodes
+    public:
+        List();                              //constructor
+        void insert_worker_list(int);  	     //insert suspended worker to list
+        void printer();                      //print list
+        void delete_list();                  //delete list
+        int return_next_worker_list();       //return next word to check
+        int return_list_kid();               //return list kids
+};
+
+
+#endif

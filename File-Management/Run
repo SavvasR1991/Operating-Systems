@@ -1,0 +1,32 @@
+#!/bin/bash
+DIR=$(pwd)			
+
+
+if [ "$1" == "clean" ] 
+then
+	
+	echo "Clean up.."
+	rm -rfv Managment/build/*
+
+elif [ "$1" == "-k" ]		
+then
+
+
+	echo "Running project.."
+	echo "CMake Building .."
+	cd Managment
+	cd build
+	cmake ..
+	echo "CMake Build done"
+	echo "Build project..."
+	make
+	echo "Build done..."
+
+
+	./FileManagment -k "$2"
+
+else
+	echo "Missing arguments.."
+fi
+
+

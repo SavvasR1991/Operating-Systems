@@ -1,0 +1,47 @@
+#!/bin/bash    
+echo "bash:Number of input parameters = $#"   
+echo "bash:All Arguments = $*"
+dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )	#find path of directory
+echo "bash:Searching directory [$dir]..."
+let checktld=0						#flag for check if tld matches with file domain
+let zero=0
+let one=1
+let two=2
+if [ "$(ls -A $dir)" ]; then				#if directory not empty		
+	for a in ${BASH_ARGV[*]} ; do			#repeat for every tld
+		let counter=0
+		echo "bash:Founded TLD [$a]:" 
+		for f in "$dir"/*; do			#repeat for every file in directory
+			while read -r line; do		#read each line in file
+				let flag=1	
+			    	IFS='.' read -ra ADDR <<< "$line"	#read until "."
+				for i in "${ADDR[@]}"; do
+					if [ "$flag" -eq "$two" ] 	#read word after "."
+			    	    	    then let flag2=1
+						 let checktld=0
+						 IFS=' ' read -ra ADDR <<< "$i" #read word after space
+						 for k in "${ADDR[@]}"; do
+							if [ "$flag2" -eq "$one" ]
+								then if [ "$a" = "$k" ]  #check if tld matches 
+				    	    				    then let checktld=1
+					    			     fi	   
+							fi
+							if [ "$flag2" -eq "$two" ]
+								then if [ "$checktld" -eq "$one" ] #if tld matches
+									then let counter=$((counter+k))
+								     fi			#add the numbers for tld
+							fi  
+							let flag2=flag2+1
+						 done
+				    	fi
+					let flag=flag+1
+				done
+			done < "$f" 
+		done
+		echo "bash:--> $counter times..."	#print the counter
+	done
+else
+	echo "bash:Directory [$dir] is Empty..."	#print empty directory
+fi
+	
+

@@ -1,0 +1,59 @@
+#!/bin/bash
+DIR=$(pwd)	
+
+trap ctrl_c INT
+
+function ctrl_c() {
+        echo "** Trapped CTRL-C"
+}
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+echo ${machine}
+
+if [ ${machine} == "Linux" ]
+then
+	echo "Running programs in Linux Enviroment"
+	if [ "$1" == "clean" ] 
+	then
+		echo "Clean up all folders.."
+		find -type d -name build -prune -exec rm -rf {} \;
+	else
+		if [ "$1" != "" ]
+		then
+			echo "Ignoring extra arguments.."
+		fi
+		
+		cd Bloom-Filter	
+		echo "Running Projects in Bloom-Filter Folder"
+		./Run
+		cd ../
+
+		cd Bloom-Filter_Multithreads
+		echo "Running Projects in Bloom-Filter_Multithreads Folder"
+		./Run
+		cd ../
+
+		cd File-Management
+		echo "Running Projects in File-Management Folder"
+		./Run
+		cd ../
+
+		cd Machine-Factory
+		echo "Running Projects in Machine-Factory Folder"
+		./Run
+		cd ../
+		
+		cd Processes-Communication
+		echo "Running Projects in Processes-Communication Folder"
+		./Run
+		cd ../
+
+	fi
+fi

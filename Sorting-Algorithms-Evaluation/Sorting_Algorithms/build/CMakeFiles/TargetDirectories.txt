@@ -1,0 +1,3 @@
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/build/CMakeFiles/edit_cache.dir
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/build/CMakeFiles/rebuild_cache.dir
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/build/CMakeFiles/Sorting_Algorithms.dir

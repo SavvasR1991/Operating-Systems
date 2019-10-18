@@ -1,0 +1,40 @@
+#!/bin/bash
+DIR=$(pwd)			
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+echo ${machine}
+
+if [ ${machine} == "Linux" ]
+then
+	echo "Running programs in Linux Enviroment"
+	if [ "$1" == "clean" ] 
+	then
+		echo "Clean up.."
+		rm -rfv Sorting_Algorithms/build/*
+	else
+		if [ "$1" != "" ]
+		then
+			echo "Ignoring extra arguments.."
+		fi
+		echo "Running project.."
+		echo "CMake Building for Object_Example.."
+		cd Sorting_Algorithms
+		mkdir build
+		cd build
+		cmake ..
+		echo "CMake Build done"
+		echo "Build project..."
+		make
+		echo "Build done..."
+		echo "------------------------ Sorting_Algorithms ------------------------"
+		./Sorting_Algorithms;
+		echo "----------------------------------------------------------------" 
+	fi
+fi

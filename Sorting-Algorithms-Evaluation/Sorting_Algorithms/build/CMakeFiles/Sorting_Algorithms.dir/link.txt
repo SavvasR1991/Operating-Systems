@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/Sorting_Algorithms.dir/src/_FileFunctions.cpp.o CMakeFiles/Sorting_Algorithms.dir/src/SortingAlgorithm.cpp.o CMakeFiles/Sorting_Algorithms.dir/src/BasicFunctions.cpp.o CMakeFiles/Sorting_Algorithms.dir/src/main.cpp.o CMakeFiles/Sorting_Algorithms.dir/src/SortingImplementation.cpp.o  -o Sorting_Algorithms -rdynamic 

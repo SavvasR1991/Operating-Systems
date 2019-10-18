@@ -1,0 +1,128 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Include/BasicFunctions.h
+iostream
+-
+vector
+-
+string
+-
+sstream
+-
+
+../Include/CartesianTree.h
+iostream
+-
+vector
+-
+string
+-
+BasicFunctions.h
+../Include/BasicFunctions.h
+
+../Include/FileFunctions.h
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+
+../Include/MultiSortingEvaluation.h
+iostream
+-
+vector
+-
+string
+-
+stdio.h
+-
+time.h
+-
+SortingAlgorithms.h
+../Include/SortingAlgorithms.h
+BasicFunctions.h
+../Include/BasicFunctions.h
+
+../Include/SortingAlgorithms.h
+iostream
+-
+vector
+-
+string
+-
+stdio.h
+-
+iomanip
+-
+
+../Include/SortingImplementation.h
+iostream
+-
+vector
+-
+string
+-
+stdlib.h
+-
+cstring
+-
+
+../Include/Tree.h
+iostream
+-
+vector
+-
+string
+-
+BasicFunctions.h
+../Include/BasicFunctions.h
+
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/ FileFunctions.cpp
+FileFunctions.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/FileFunctions.h
+BasicFunctions.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/BasicFunctions.h
+
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/BasicFunctions.cpp
+BasicFunctions.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/BasicFunctions.h
+
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/SortingAlgorithm.cpp
+SortingAlgorithms.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/SortingAlgorithms.h
+SortingImplementation.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/SortingImplementation.h
+BasicFunctions.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/BasicFunctions.h
+
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/SortingImplementation.cpp
+SortingImplementation.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/SortingImplementation.h
+BasicFunctions.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/BasicFunctions.h
+Tree.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/Tree.h
+CartesianTree.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/CartesianTree.h
+
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/main.cpp
+iostream
+-
+vector
+-
+string
+-
+MultiSortingEvaluation.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/MultiSortingEvaluation.h
+FileFunctions.h
+/home/savvas/Desktop/Σάββας Ροστάντης/GitHub/Operating-Systems/SortingAlgoEvaluation/Sorting_Algorithms/src/FileFunctions.h
+

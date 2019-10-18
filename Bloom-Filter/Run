@@ -1,0 +1,46 @@
+#!/bin/bash
+DIR=$(pwd)			
+
+
+if [ "$1" == "clean" ] 
+then
+	
+	echo "Clean up.."
+	rm -rfv Bloom_Filter/build/*
+
+elif [ "$1" == "-k" ]		
+then
+	if ! [[ "$2" =~ ^[0-9]+$ ]]
+	then
+		echo "Error in inputs. Must be an Integer.."
+	else
+		if ! [[ "$3" =~ ^[0-9]+$ ]]
+		then
+			echo "Error in inputs. Must be an Integer.."
+		else
+
+			if ! [[ "$4" =~ ^[0-9]+$ ]]
+			then
+				echo "Error in inputs. Must be an Integer.."
+			else
+				echo "Running project.."
+
+				echo "CMake Building .."
+				cd Bloom_Filter
+				cd build
+				cmake ..
+				echo "CMake Build done"
+				echo "Build project..."
+				make
+				echo "Build done..."
+
+			        ./invoke-oracle "$1" "$2" "$3" "$4"
+			fi
+		fi
+	fi
+
+else
+	echo "Missing arguments.."
+fi
+
+

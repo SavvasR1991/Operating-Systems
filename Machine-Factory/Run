@@ -1,0 +1,32 @@
+#!/bin/bash
+DIR=$(pwd)			
+
+
+if [ "$1" == "clean" ] 
+then
+	
+	echo "Clean up.."
+	rm -rfv Factory-Simulator/build/*
+
+elif [[ "$1" =~ ^[0-9]+$ ]]
+then
+
+	echo "Running project.."
+	echo "CMake Building .."
+	cd Factory-Simulator
+	mkdir build
+	cd build
+	cmake ..
+	echo "CMake Build done"
+	echo "Build project..."
+	make
+	echo "Build done..."
+
+
+	./processes "$1"
+
+else
+	echo "Missing arguments.."
+fi
+
+
